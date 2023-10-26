@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./phone.css" media="(max-width:768px)">
+    <title>Jawad photo editor</title>
+</head>
+<body>
+    <div class="container disabled">
+        <h1>Jawad photo lab</h1>
+        <hr>
+        <div class="view_img">
+            <img src="./noimage.png" alt="">
+        </div>
+
+        <div class="choose_img">
+            <button>Choose Image  <img src="./upload2-removebg-preview.png" alt=""></button>
+            <input type="file" name="" id="" accept="image/*" hidden>
+        </div>
+
+        <div class="slider">
+            <div class="filter_info">
+                <span class="name">brightness</span>
+                <span class="value">100%</span>
+            </div>
+            <input type="range" name="" id="" max="200" min="0">
+        </div>
+        <div class="icon_filter">
+            <p>filter</p>
+            <div class="icon_rooms">
+                <button title="brightness" id="brightness" class="active" ><img src="./brightness-removebg-preview.png" alt=""></button>
+                <button title="contrast" id="contrast"><img src="./circle-removebg-preview.png" alt=""></button>
+                <button title="saturate" id="saturate"><img src="./candle2.png" alt=""></button>
+                <button title="invert" id="invert"><img src="./candle1-removebg-preview.png" alt=""></button>
+                <button title="blur" id="blur"><img src="./crack-removebg-preview.png" alt=""></button>
+            </div>
+        </div>
+        <div class="icon_filter">
+            <p>rotate & flip</p>
+            <div class="icon_rooms1">
+                <button title="rotate_left" id="rotate_left"><img src="./cuved1.png" alt=""></button>
+                <button title="rotate_right" id="rotate_right"><img src="./curved2.svg" alt=""></button>
+                <button title="flip_x" id="flip_x"><img src="./square.png" alt=""></button>
+                <button title="flip_y" id="flip_y"><img src="./square.png" alt=""></button>
+            </div>
+        </div>
+
+        <div class="btn_contain">
+            <button class="reset">reset filters</button>
+            <button class="save">save image</button>
+        </div>
+
+    </div>
+     <script src="./index.js"></script>
+</body>
+</html>
